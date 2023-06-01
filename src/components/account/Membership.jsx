@@ -1,4 +1,4 @@
-import Loader from "../common/Loader";
+import Loader from "./Loader";
 
 function Membership() {
   const tr = false;
@@ -25,18 +25,24 @@ function Membership() {
       </div>
 
       <div className="col-span-3">
-        <div className="flex flex-col justify-between border-b border-white/10 py-4 md:flex-row">
+        <div className="flex flex-col justify-between border-b text-white border-white/10 py-4 md:flex-row">
           <div>
-            <p className="font-medium">user@gmail.com</p>
-            <p className="text-[gray]">Password: *********</p>
+            <p className="font-medium">Email: user@gmail.com</p>
+            <p className="font-medium">
+              Password: <span className="hover:underline cursor-[/src/images/logo.png]">*********</span>
+            </p>
           </div>
-          <div className="md:text-right">
-            <p className="membershipLink">Change email</p>
-            <p className="membershipLink">Change password</p>
+          <div className="md:text-right text-blue-500">
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Change email
+            </p>
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Change password
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-between pt-4 pb-4 md:flex-row md:pb-0">
+        <div className="flex flex-col text-white justify-between pt-4 pb-4 md:flex-row md:pb-0">
           <div>
             <p>
               12-18-1990 Your membership will end on Your next billing date is
@@ -44,10 +50,18 @@ function Membership() {
             </p>
           </div>
           <div className="md:text-right">
-            <p className="membershipLink">Manage payment info</p>
-            <p className="membershipLink">Add backup payment method</p>
-            <p className="membershipLink">Billing Details</p>
-            <p className="membershipLink">Change billing day</p>
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Manage payment info
+            </p>
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Add backup payment method
+            </p>
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Billing Details
+            </p>
+            <p className="cursor-pointer text-blue-500 hover:underline md:text-right">
+              Change billing day
+            </p>
           </div>
         </div>
       </div>

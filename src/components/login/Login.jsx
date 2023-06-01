@@ -18,7 +18,7 @@ function Login() {
         <nav className="px-12 py-5">
           <img src="/src/images/logo.png" alt="logo" className="h-12" />
           <div className="flex justify-center">
-            <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w:2/5 lg:max-w-md rounded-md w-full">
+            <div className="bg-black bg-opacity-70  md:px-16 md:py-16 self-center mt-8 lg:w:2/5 lg:max-w-md rounded-md w-full">
               <h2 className="text-white text-4xl mb-8 font-semibold">
                 Sign in
               </h2>

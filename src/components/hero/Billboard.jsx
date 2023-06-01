@@ -1,8 +1,10 @@
 // import React from 'react'
 import { useCallback } from "react";
-import data from "../../movie.json";
+import data from "../../../movie.json";
+import { Link } from "react-router-dom";
 
 function Billboard() {
+  //Remove this from here and shift to Home Component To load Faster
   const rand = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
@@ -13,6 +15,7 @@ function Billboard() {
   }, []);
   const video = collect();
   console.log(video);
+
   return (
     <>
       <div className="relative h-[95%]">
@@ -61,6 +64,31 @@ function Billboard() {
                 flex flex-row items-center mt-3 md:mt-4 gap-3
             "
           >
+            <Link to={`/video/${video.id}`}><button
+              className="
+                    bg-white
+                    text-zinc-800
+                    bg-opacity-50
+                    rounded-md
+                    py-1 md:py-2
+                    px-2 md:px-4
+                    w-auto
+                    h-12
+                    text-base lg:text-lg
+                    font-semibold
+                    flex
+                    flex-row
+                    items-center
+                    hover:bg-opacity-20
+                    hover:text-zinc-300
+                    transition
+                    
+                "
+            >
+              {/* <i className="fas fa-play-circle"></i> */}
+              <i className="fa-solid fa-circle-play fa-xl mr-2"></i>
+              Play
+            </button></Link>
             <button
               className="
                     bg-white
@@ -70,7 +98,8 @@ function Billboard() {
                     py-1 md:py-2
                     px-2 md:px-4
                     w-auto
-                    text-xs lg:text-lg
+                    h-12
+                    text-base lg:text-lg
                     font-semibold
                     flex
                     flex-row
@@ -79,7 +108,7 @@ function Billboard() {
                     transition
                 "
             >
-                <i className="fa-solid fa-circle-info mr-2"></i>
+              <i className="fa-solid fa-circle-info fa-lg mr-2"></i>
               More Info
             </button>
           </div>
