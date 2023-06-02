@@ -59,8 +59,6 @@ const Thumbnail = () => {
             alt={"AfterSun"}
           />
         </div>
-
-
         <div className="object-cover h-[100%] hover:brightness-125 cursor-pointer mr-4">
           <img
             style={{ userSelect: "none" }}

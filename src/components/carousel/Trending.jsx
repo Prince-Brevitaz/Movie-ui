@@ -6,7 +6,7 @@ function Trending() {
       className="relative w-full -top-48 md:-top-96 mt-10
     bg-gradient-to-b from-transparent to-95%"
     >
-      <div className="relative  ml-4 md:ml-16">
+      <div className="relative ml-4 md:ml-16">
         <p
           className="
           text-white
@@ -18,11 +18,11 @@ function Trending() {
           font-bold 
           drop-shadow-xl"
         >
-          Top 10 in prince Netflix
+          Top 10 in Prince NetFlix
         </p>
 
-        <div className="relative">
-          <ul className="flex list-none w-full mt-5 h-52 lg:h-[29rem] overflow-x-auto overflow-y-visible">
+        <div className="relative mr-5">
+          <ul className="flex list-none w-full mt-5 h-52 mr-9 lg:h-[29rem] overflow-x-auto overflow-y-visible">
             <li className="item top-picks__item">
               <a
                 className="item__card"

@@ -6,6 +6,9 @@ import Movie from "../components/carousel/Movie";
 // import Intro from "../components/splash/Intro";
 import { LoginContext } from "../Context/LoginContext";
 import Trending from "../components/carousel/Trending";
+// import Thumbnail from "../components/carousel/Thumbnail";
+// import Thumbnail_lg from "../components/carousel/Thumbnail_lg";
+import Movie_lg from "../components/carousel/Movie_lg";
 
 function Home() {
   let login = useContext(LoginContext);
@@ -27,10 +30,15 @@ function Home() {
       <Navbar />
       <Billboard />
       <Featured />
+      <Movie_lg title="long"/>
       <Movie title="New" />
-      <Trending />  
-      <Movie title="old" />
+      <Trending />
+      {/* <Thumbnail_lg /> */}
+      {/* <Movie title="old" /> */}
       {/* <Movie title="play" /> */}
+      <div className="h-56" />
+      <div className="h-56" />
+      <div className="h-56" />
       <div className="h-56" />
       <div className="h-56" />
       <div className="h-56" />

@@ -14,7 +14,6 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/account" element={<Account />} />
         <Route path="/loader" element={<Loader />} />
-        <Route path="/Admin" element={<Home />} />
       </Routes>
     </Router>
   );
