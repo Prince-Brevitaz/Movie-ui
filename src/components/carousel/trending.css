@@ -38,7 +38,7 @@
   right: 1rem;
   height: 1.5rem;
   width: 1.5rem;
-  background-image: url("/public/icon.svg");
+  background-image: url("/icon.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }

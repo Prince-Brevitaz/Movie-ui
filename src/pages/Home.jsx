@@ -3,7 +3,7 @@ import Billboard from "../components/hero/Billboard";
 import Navbar from "../components/navbar/Navbar";
 import Featured from "../components/carousel/Featured";
 import Movie from "../components/carousel/Movie";
-// import Intro from "../components/splash/Intro";
+import Intro from "../components/splash/Intro";
 import { LoginContext } from "../Context/LoginContext";
 import Trending from "../components/carousel/Trending";
 // import Thumbnail from "../components/carousel/Thumbnail";
@@ -22,10 +22,9 @@ function Home() {
     login.loading.firstLoading ? differ() : null;
   });
 
-  return (
-    // login.loading.firstLoading ? (
-    // <Intro />
-    // ) : (
+  return login.loading.firstLoading ? (
+    <Intro />
+    ) : (
     <>
       <Navbar />
       <Billboard />
